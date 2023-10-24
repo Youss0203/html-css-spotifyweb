@@ -5,56 +5,89 @@
 }
 
 
-/*CSS HEADER*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
 
-header{
+
+
+
+/*CSS MAIN*/
+
+.flex{
     display:flex;
 }
 
 .container-header{
+    width:10%;
     height:700px;
-    width: 70px;
-    border:solid red 2px;
-}
-
-.flex-column{
-    display:flex;
-    flex-direction: column;
-}
-.call-to-action{
-    border: 2px solid blueviolet;
-    height: 60px;
-    width: calc(100vw - 70px);
-}
-
-/*CSS MAIN*/
-
-main{
-    position:relative;
+    border: solid 2px black;
 }
 
 .container-main{
-    width: calc(100vw - 70px);
-    border:solid 2px black;
-    height:640px;
-    position: absolute;
-    bottom:0;
-    left:70px;
+    width: 90%;
+    height:700px;
+    border: solid 2px violet;
     overflow-y: scroll;
 }
 
-.flex{
-    display:flex;
-    flex-wrap: wrap;
+.call-to-action{
+    height: 70px;
+    border:2px solid orangered;
 }
 
+ul{
+    list-style:none;
+}
+
+.flex-center{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.flex-w{
+    flex-wrap:wrap;
+}
+
+li{
+    padding:1rem;
+    width: calc(100% / 4);
+    font-size:12px;
+    text-transform: uppercase;
+}
 
 .card{
     height:100px;
+    border:solid 2px hotpink;
     width: calc(100% / 2 - 2rem);
-    border:solid magenta 2px;
-    margin:0 1rem;
+    margin:1rem 1rem;
 }
+
+h1{
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+
+p{
+    padding-left:1rem;
+    font-size:10px;
+}
+
+.circle{
+    border-radius:50%;
+    height: 100px;
+    width:100px;
+    border:2px solid navy;
+    margin-top:1rem;
+    margin-left:1rem;
+}
+
+
+
+
+
+
 
 
 
@@ -74,7 +107,7 @@ footer{
 }
 
 .song-bar{
-    height: 100px;
+    height: 200px;
     width: 100vw;
     border:2px solid brown;
 }
@@ -85,18 +118,24 @@ footer{
 
 
 @media screen and (min-width:576px){
-    .call-to-action{
-        max-width: calc(100vw - 150px);
-    }
-
     .container-header{
-        width: 150px;
+        width:20%;
+        height:700px;
+        border: solid 2px black;
     }
-
     .container-main{
-        left:150px;
-        width: calc(100vw - 150px)
+        width: 80%;
+        /*height:700px;*/
+        border: solid 2px violet;
+    
     }
+    li{
+        width: calc(100% / 3);
+    }
+    .main-nav-bar{
+        padding:0 2rem;
+    }
+    
 }
 
 
@@ -105,11 +144,37 @@ footer{
         width: calc(100% / 4 - 2rem);
     }
 
+    li{
+        width: calc(100% / 5);
+    }
+    
+
 
 }
 
 @media screen and (min-width:992px){
+
+    .container-header{
+        width:10%;
+        height:700px;
+        border: solid 2px black;
+    }
+    
+    .container-main{
+        width: 90%;
+        /*height:700px;*/
+        border: solid 2px violet;
+    
+    }
     .card{
         width: calc(100% / 6 - 2rem);
+    }
+    li{
+        width: calc(100% / 6);
+    }
+
+    .main-nav-bar{
+        width: 70%;
+        margin:0 auto;
     }
 }
