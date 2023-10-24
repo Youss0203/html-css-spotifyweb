@@ -21,19 +21,26 @@ header{
     display:flex;
     flex-direction: column;
 }
-
-/*CSS MAIN*/
-
 .call-to-action{
     border: 2px solid blueviolet;
     height: 60px;
     width: calc(100vw - 70px);
 }
 
+/*CSS MAIN*/
+
 main{
-    width: calc(100vw - 70px);
+    position:relative;
+}
+
+.container-main{
+    max-width: calc(100vw - 70px);
     border:solid 2px black;
     height:640px;
+    position: absolute;
+    bottom:0;
+    left:70px;
+    overflow-y: scroll;
 }
 
 
@@ -49,9 +56,17 @@ main{
 
 
 
+/*CSS FOOTER*/
 
+footer{
+    position: fixed;
+}
 
-
+.song-bar{
+    height: 100px;
+    width: 100vw;
+    border:2px solid brown;
+}
 
 
 
@@ -65,5 +80,9 @@ main{
 
     .container-header{
         width: 150px;
+    }
+
+    .container-main{
+        left:150px;
     }
 }
