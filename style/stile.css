@@ -15,10 +15,21 @@ body{
 
 /*CSS MAIN*/
 
+button{
+    color:white;
+    border:1px solid white;
+    border-radius: 2rem;
+    padding:.5rem 2rem;
+    background-color: #090B13;
+}
+
 .flex{
     display:flex;
 }
-
+.flex-end{
+    display:flex;
+    justify-content: flex-end;
+}
 .container-header{
     width:10%;
     height:700px;
@@ -34,9 +45,10 @@ body{
 }
 
 .call-to-action{
-    height: 70px;
+    /*height: 70px;*/
     border:2px solid orangered;
     background-color: #090B13;
+    padding:1rem 1rem;
 }
 
 ul{
@@ -129,7 +141,7 @@ footer{
 }
 
 .song-bar{
-    height: 200px;
+    height: 100px;
     width: 100vw;
     border:2px solid brown;
 }
