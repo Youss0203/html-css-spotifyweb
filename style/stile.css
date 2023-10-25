@@ -16,13 +16,33 @@ body{
 /*CSS MAIN*/
 .logo{
     width: 100%;
-    padding:.5rem;
+    padding: 1rem .4rem 1rem .7rem;
 }
 
+.app-name{
+    display:none;
+    margin:0;
+}
 
+.fa-house,
+.fa-magnifying-glass,
+.fa-bars,
+.fa-circle-arrow-down,
+.fa-user{
+    font-size:20px;
+}
 
+.fa-circle-arrow-down{
+    padding:27rem .3rem 0;
+}
 
+.fa-user{
+    padding: 0 .3rem;
+}
 
+.simboli{
+    padding:.3rem 1.2rem;
+}
 
 
 
@@ -45,14 +65,14 @@ button{
     justify-content: flex-end;
 }
 .container-header{
-    width:10%;
+    width:  60px;
     height:700px;
     background-color: #000000 ;
     /*border: solid 2px black;*/
 }
 
 .container-main{
-    width: 90%;
+    width: calc(100vw - 60px);
     height:700px;
     /*border: solid 2px violet;*/
     overflow-y: scroll;
@@ -169,12 +189,12 @@ footer{
 
 @media screen and (min-width:576px){
     .container-header{
-        width:20%;
+        width:250px;
         height:700px;
         /*border: solid 2px black;*/
     }
     .container-main{
-        width: 80%;
+        width: 85%;
         /*height:700px;*/
         /*border: solid 2px violet;*/
     
@@ -185,7 +205,13 @@ footer{
     .main-nav-bar{
         padding:0 2rem;
     }
-    
+    .logo{
+        width: 20%;
+    }
+    .app-name{
+        display:block;
+        padding-top:.5rem;
+    }
 }
 
 
@@ -197,6 +223,14 @@ footer{
     li{
         width: calc(100% / 5);
     }
+    .logo{
+        width: 20%;
+    }
+    .app-name{
+        display:block;
+        padding-top:.5rem;
+    }
+}
     
 
 
@@ -205,13 +239,13 @@ footer{
 @media screen and (min-width:992px){
 
     .container-header{
-        width:10%;
+        
         height:700px;
         /*border: solid 2px black;*/
     }
     
     .container-main{
-        width: 90%;
+        
         /*height:700px;*/
         /*border: solid 2px violet;*/
     
@@ -226,5 +260,9 @@ footer{
     .main-nav-bar{
         width: 70%;
         margin:0 auto;
+    }
+
+    .logo{
+        width: 20%;
     }
 }
