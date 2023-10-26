@@ -294,6 +294,23 @@ footer{
     flex-direction: column;
 }
 
+span{
+    color:white;
+    padding:.5rem 0;
+}
+
+.sound{
+    border-bottom:2px solid pink;
+}
+
+.fa-bars-staggered,
+.fa-display,
+.fa-volume-high{
+    color:white;
+    padding-top:2rem;
+    padding-right:1rem;
+}
+
 @media screen and (min-width:576px){
     .container-header{
         width:250px;
@@ -340,6 +357,10 @@ footer{
     }
     .border-lime{
         border-left:2px solid lime
+    }
+
+    .border-transparent{
+        border-left:2px solid transparent;
     }
 }
 
