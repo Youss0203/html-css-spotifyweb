@@ -222,10 +222,77 @@ footer{
     background-color: #282828;
 }
 
+.flex-between{
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer-bar{
+    border:solid gold 2px;
+    width: calc(100vw / 3);
+}
+
+.bar-image{
+    width: 80px;
+    padding:1rem;
+}
+
+.name-song{
+    margin:0;
+    padding-top:1.5rem;
+    padding-left:.1rem;
+    font-size:15px;
+}
+
+.bar-paragraphe{
+    padding:0
+}
+
+.fa-heart{
+    padding:2rem 0 0 4rem;
+    color:#7B7D81;
+}
+.fa-folder{
+    padding-top:2rem;
+    padding-left: 1rem;
+    color:#7B7D81;
+}
 
 
 
+.fa-circle-play{
+    font-size:23px;
+    margin-top:.3rem;
+    padding-left:1rem;
+    color:white;
+}
+.fa-shuffle,
+.fa-backward-step,
+.fa-forward-step,
+.fa-rotate-right{
+    margin-top:.5rem;
+    padding-left:1rem;
+    color:white;
+}
 
+.flex-around{
+    justify-content: center;
+    
+}
+
+.superior-bar{
+    height: calc(100% / 2);
+}
+
+.inferior-bar{
+    border:gold 2px solid;
+    height: 50%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
 
 @media screen and (min-width:576px){
     .container-header{
@@ -270,6 +337,9 @@ footer{
     }
     .visible{
         display:none;
+    }
+    .border-lime{
+        border-left:2px solid lime
     }
 }
 
