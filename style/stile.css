@@ -346,6 +346,31 @@ span {
     padding-right: 1rem;
 }
 
+
+span:hover{
+    color:white;
+}
+
+.color-bar:hover{
+    background-color: lime;
+}
+
+
+li:hover{
+    color:white;
+}
+button:hover{
+    transform: scale(1.2);
+}
+
+h2.text-center:hover{
+    transform: scale(1.3);
+}
+
+
+
+
+
 @media screen and (min-width:576px) {
     .container-header {
         width: 250px;
